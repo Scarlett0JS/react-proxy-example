@@ -1,6 +1,7 @@
-body, html {
+body,
+html {
   margin: 0;
-  height:100%; 
+  height: 100%;
   overflow: auto;
   background-color: rgb(58, 58, 58);
 }
@@ -16,7 +17,18 @@ body, html {
 }
 
 .main {
-  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.book {
+  display: inline-block;
+}
+
+.todo {
+  display: inline-block;
 }
 
 .header {
@@ -27,7 +39,7 @@ body, html {
   text-shadow: 2px 2px 4px rgb(158, 178, 228);
 }
 
-.form-wrapper{
+.form-wrapper {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -81,9 +93,9 @@ body, html {
 }
 
 .input-group input:focus {
-  outline: none !important; 
-  border-color: rgb(203, 218, 255); 
-  box-shadow: 0 0 5px rgb(203, 218, 255); 
+  outline: none !important;
+  border-color: rgb(203, 218, 255);
+  box-shadow: 0 0 5px rgb(203, 218, 255);
 }
 
 button {
@@ -123,7 +135,7 @@ button {
   margin-left: 1rem;
 }
 
-.get-button{
+.get-button {
   float: right;
 }
 
@@ -152,7 +164,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   border-bottom: 0.5px solid #444444;
 }

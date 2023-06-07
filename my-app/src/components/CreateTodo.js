@@ -1,4 +1,4 @@
-const CreateBook = ({ onChangeForm, handleSubmit }) => {
+const CreateTodo = ({ onChangeForm, handleSubmit }) => {
 
 
     return (
@@ -6,12 +6,12 @@ const CreateBook = ({ onChangeForm, handleSubmit }) => {
             <div className="form">
                 <form>
                     <div className="input-group">
-                        <label>book</label>
+                        <label>todo</label>
                         <input
                             type="text"
                             onChange={(e) => onChangeForm(e)}
-                            name="book"
-                            placeholder="book"
+                            name="todo"
+                            placeholder="todo"
                         />
                     </div>
                     <div className="input-group">
@@ -21,15 +21,6 @@ const CreateBook = ({ onChangeForm, handleSubmit }) => {
                             onChange={(e) => onChangeForm(e)}
                             name="category"
                             placeholder="category"
-                        />
-                    </div>
-                    <div className="input-group">
-                        <label>author</label>
-                        <input
-                            type="text"
-                            onChange={(e) => onChangeForm(e)}
-                            name="author"
-                            placeholder="author"
                         />
                     </div>
                     <button
@@ -43,4 +34,4 @@ const CreateBook = ({ onChangeForm, handleSubmit }) => {
     )
 }
 
-export default CreateBook;
+export default CreateTodo;
